@@ -12,7 +12,7 @@ The distribution of species is determined by the joint effects of numerous aspec
 ## Repository README: 
 
 ### Downloading associated data
-This repository contains all the necessary scripts to replicate results in the associated text. First, the user must download the up-to-date data files from the Environmental Data Initiative (DOI: ). Metadata for all data files can be found in the data repository. To make the scripts here work out-of-the-box, the user should move the data files into the following folders:
+This repository contains all the necessary scripts to replicate results in the associated text. First, the user must download the up-to-date data files from the Environmental Data Initiative (EDI) at this link (DOI: ). Metadata for all data files can be found in the data repository. To make the scripts here work out-of-the-box, the user should move the data files into the following folders:
 
 - fish_survey_data.csv and fishable_species into data --> fish
 - partition_data.csv into data --> partitions
@@ -26,7 +26,7 @@ To replicate results, the reader can navigate to the scripts --> analysis folder
 To generate figures in the text, the reader can navigate to scripts --> figure_generation.  Each figure in the text, except the maps in Figures 1 and S1, has an accompanying script to replicate it, although some minor formatting (e.g., combining panels) may have been done in another program. The coordinates for the survey sites shown on Figure 1 can be found in the fish data file.
 
 ### Navigating the repository
-The three highest level folders are: “data”, “outputs”, and “scripts”.  Broadly, the “data” folder contains the input data used for analysis, the “outputs” folder contains the outputs from analyses that are used in the manuscript, and the “scripts” folder contains scripts to replicate the outputs and generate figures in the text.
+The three highest level folders are: “data”, “outputs”, and “scripts”.  Broadly, the “data” folder contains the input data used for analysis, the “outputs” folder contains the outputs from analyses that are used in the manuscript, and the “scripts” folder contains scripts to replicate the outputs and generate figures in the text. The subfolders all have .gitkeep files in them to preserve the repository structure in the absence of data files which should be accessed from the EDI repository.
 
 #### “data” folder contains input data for analysis and survey coordinates
 - “fish” subfolder contains the fish counts for 2018 and 2019 and a metadata file signaling which species are fished and thus included as fishable biomass.  Each row in the fish count data represent a single observation (species of a given size within a transect segment) and these are processed using the function in “fish_sum_stats_partition.R” script.
